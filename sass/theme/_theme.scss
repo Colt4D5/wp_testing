@@ -1,0 +1,331 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+* {
+  cursor: none;
+}
+
+body {
+  font-size: 18px;
+
+  h1 {
+    font-family: 'Comfortaa', cursive;
+  }
+}
+
+.cursor {
+  position: absolute;
+  transform: translate(0, -0);
+  width: 18px;
+  height: 18px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border: 1px solid white;
+  z-index: 100;
+  pointer-events: none;
+  transition: width 0.2s ease,
+              height 0.2s ease,
+              transform 0.2s ease;
+
+  &.hovering {
+    width: 36px;
+    height: 36px;
+    transform: translate(-9px, -9px);
+  }
+}
+
+.wrapper {
+  padding: 6rem 0;
+}
+
+#wrapper-navbar {
+  
+
+  .top-header-holder {
+    background: #111;
+    z-index: 1;
+
+    .inner {
+      height: 120px;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+
+      a {
+        height: 95%;
+
+        img {
+          height: 100%;
+          z-index: 10;
+        }
+      }
+    }
+  }
+
+  #nav-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+
+
+.home-banner {
+  height: 1080px;
+  position: relative;
+  background-color: #333;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/hero-dark.png);
+  background-size: cover;
+  box-shadow: inset 0 150px 100px #111,
+              inset 0 -150px 100px #111;
+
+  #module {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 100px;
+    animation: float 10s linear infinite;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 8.5rem;
+    font-weight: 700;
+  }
+}
+
+
+
+.wrapper.body {
+  background-color: #111;
+  // margin: 0;
+  // padding: 0;
+  background-size: cover;
+  color: #fff;
+  box-shadow: inset 0 150px 100px #111,
+              inset 0 -150px 100px #111;
+
+  .inner {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    display: flex;
+
+    .flight-img {
+      flex-grow: 1;
+      width: 40%;
+      display: grid;
+      place-items: center;
+
+      img {
+        // width: 50%;
+        margin: 2rem auto;
+      }
+    }
+
+    .flight-details {
+      flex-grow: 1;
+      width: 60%;
+      padding: 2rem 4rem;
+      position: relative;
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        background-color: $secondary;
+        border: none;
+        border-radius: 6px;
+        transition: all 0.4 ease;
+        float: right;
+        margin-top: 2rem;
+        box-shadow: 0 0 0 0 rgba(112, 190, 91, 0);
+        display: flex;
+        align-items: center;
+        transition: box-shadow 0.2s ease;
+        
+        &:hover {
+          box-shadow: 0 0 3px 3px rgba(77, 27, 205, 0.3),
+                      0 0 6px 6px rgba(255, 255, 255, 0.3);
+        }
+
+        a {
+          color: white;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          text-decoration: none;
+
+          .dashicons-arrow-right-alt2 {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper.body.purple {
+  background-color: $secondary;
+  background-image: url(../img/geo-bg.png);
+  background-size: cover;
+  box-shadow: inset 4px 10px 12px rgba(17,17,17,0.4);
+
+  .inner {
+    height: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
+.contact-container {
+  width: 50%;
+  background: linear-gradient(345deg, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0));
+  border-radius: 45px;
+  margin: auto;
+  padding: 4rem 6rem;
+  box-shadow: inset 10px 6px 8px rgba(255,255,255,0.1),
+              inset 4px 4px 3px rgba(0,0,0,0.8);
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+    &[type=submit] {
+      background-color:$secondary;
+      border: none;
+      box-shadow: 6px 4px 6px rgba(0,0,0,0.3);
+      color: #fff;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      cursor: none;
+
+      &:hover {
+        background-color: rgb(132, 94, 230);
+        transform: translate(4px, 3px);
+        
+      box-shadow: 0 0 2px rgba(0,0,0,0.3);
+      }
+    }
+  }
+
+
+}
+
+.wrapper.body.pricing {
+  .inner {
+    flex-direction: column;
+    border: none;
+
+    h1 {
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 2rem 0;
+
+      .card {
+        width: 300px;
+        background: linear-gradient(345deg, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0));
+        border-radius: 25px;
+        text-align: center;
+        margin: 0 1rem;
+        overflow: hidden;
+
+        .description {
+          background: $secondary;
+          // border-radius: 25px 25px 0 0;
+          padding: 2rem;
+          height: 175px;
+          clip-path: polygon(0 0, 100% 0, 100% 95%, 55% 95%, 50% 100%, 45% 95%, 0 95%);
+
+          h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: $tertiary;
+          }
+        }
+
+        .feat {
+          padding: 0.4rem 0;
+
+          p {
+            margin: 0;
+            font-size: 1.5rem;
+
+            .dashicons-saved {
+              color: $green;
+              font-size: 2.5rem;
+              margin-right: 2.2rem;
+            }
+          }
+        }
+
+        .feat:nth-child(even) {
+          background: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+#wpadminbar, #wp-toolbar, #wp-admin-bar-root-default, .ab-item {
+  cursor: default;
+}
+
+#wrapper-footer {
+  background-color: #333;
+  color: #fff;
+
+  a {
+    color: #aaa;
+  }
+}
+
+@keyframes float {
+  0% {
+    right: 10%;
+    transform: rotate(0);
+  }
+
+  50% {
+    right: 14%;
+  }
+
+  100% {
+    right: 10%;
+    transform: rotate(360deg);
+  }
+}
