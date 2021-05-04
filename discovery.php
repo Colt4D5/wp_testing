@@ -2,7 +2,7 @@
   <div class="inner">
     <div class="flight-img">
       <!-- <img src="wp-content/themes/my-theme/img/tie-fighter-med.png" alt="Tie Fighter"> -->
-      <img src="<?php echo get_template_directory_uri(); ?>/img/tie-fighter-med.png" alt="Tie Fighter">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/spaceship.png" alt="Spaceship">
     </div>
     <div class="flight-details">
       <h1>DISCOVERY</h1>

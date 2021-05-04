@@ -140,21 +140,24 @@ body {
         margin-bottom: 2rem;
       }
 
+      ul {
+        margin: 2rem 0;
+      }
+
       button {
-        background-color: $secondary;
-        border: none;
-        border-radius: 6px;
-        transition: all 0.4 ease;
-        float: right;
-        margin-top: 2rem;
-        box-shadow: 0 0 0 0 rgba(112, 190, 91, 0);
-        display: flex;
-        align-items: center;
-        transition: box-shadow 0.2s ease;
+      background-color:$secondary;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 6px 4px 6px rgba(0,0,0,0.3);
+      color: #fff;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      cursor: none;
+      float: right;
         
         &:hover {
-          box-shadow: 0 0 3px 3px rgba(77, 27, 205, 0.3),
-                      0 0 6px 6px rgba(255, 255, 255, 0.3);
+          background-color: rgb(132, 94, 230);
+          transform: translate(4px, 3px);
         }
 
         a {
@@ -165,7 +168,8 @@ body {
           text-decoration: none;
 
           .dashicons-arrow-right-alt2 {
-            display: inline;
+            position: relative;
+            top: 5px;
           }
         }
       }
@@ -187,6 +191,12 @@ body {
     align-items: flex-end;
     border: none;
 
+    img {
+      max-width: 560px;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid white;
+    }
+
     h1 {
       font-size: 3rem;
     }
@@ -207,7 +217,7 @@ body {
     margin-bottom: 2rem;
   }
 
-  input {
+  input, select {
     width: 100%;
     padding: 0.5rem;
     border-radius: 8px;
@@ -225,8 +235,6 @@ body {
       &:hover {
         background-color: rgb(132, 94, 230);
         transform: translate(4px, 3px);
-        
-      box-shadow: 0 0 2px rgba(0,0,0,0.3);
       }
     }
   }
@@ -285,10 +293,18 @@ body {
               margin-right: 2.2rem;
             }
           }
+
+          &.price {
+            font-weight: 700;
+
+            p {
+              font-size: 2rem;
+            }
+          }
         }
 
         .feat:nth-child(even) {
-          background: rgba(255, 255, 255, 0.4);
+          background: rgba(255, 255, 255, 0.3);
         }
       }
     }

@@ -23,6 +23,7 @@ get_header();
 
 <div class="wrapper body purple">
   <div class="inner">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/gc-logo.png" alt="Galactic Cruiselines">
     <h1>Experience the Galaxy<br>in a whole new light</h1>
   </div>
 </div>
@@ -52,6 +53,9 @@ get_header();
           <div class="feat">
             <p><span class="dashicons dashicons-saved"></span>3 spacewalks</p>
           </div>
+          <div class="feat price">
+            <p>$14,999</p>
+          </div>
         </div>
       </div>
 
@@ -73,6 +77,9 @@ get_header();
           <div class="feat">
             <p><span class="dashicons dashicons-saved"></span>5 spacewalks</p>
           </div>
+          <div class="feat price">
+            <p>$27,999</p>
+          </div>
         </div>
       </div>
 
@@ -93,6 +100,9 @@ get_header();
           </div>
           <div class="feat">
             <p><span class="dashicons dashicons-saved"></span>10 spacewalks</p>
+          </div>
+          <div class="feat price">
+            <p>$44,999</p>
           </div>
         </div>
       </div>

@@ -7,6 +7,12 @@
       <input type="text" name="lastname" placeholder="Last Name">
       <input type="email" name="email" placeholder="Email Address">
       <input type="tel" name="phonenumber" placeholder="Phone Number">
+      <select name="pkg" id="pkg" placeholder="Desired Package">
+        <option value="default" selected>Desired Package</option>
+        <option value="lunar">Lunar - $14,999</option>
+        <option value="jupiter">Jupiter - $27,999</option>
+        <option value="milky-way">Milky Way - $44,999</option>
+      </select>
       <input type="date" name="date" placeholder="Desired Date">
       <input type="submit" value="Reserve Today">
     </form>

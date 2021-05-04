@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 		<div class="top-header-holder">
-			<div class="inner"><a href="#"><img src="wp-content/themes/my-theme/img/astro-logo.png" alt="Space Logo"></a></div>
+			<div class="inner"><a href="#"><img src="wp-content/themes/my-theme/img/space-logo-wht.png" alt="Space Logo"></a></div>
 		</div>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
